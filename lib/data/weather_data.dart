@@ -20,7 +20,7 @@ class WeatherData {
   static WeatherData fromJson(Map<String, dynamic> json) {
     return WeatherData(
       city: json['name'],
-      description: json['weather'][0]['main'],
+      description: json['weather'][0]['description'],
       temperature: json['main']['temp'].toDouble(),
       minTemperature: json['main']['temp_min'].toDouble(),
       maxTemperature: json['main']['temp_max'].toDouble(),

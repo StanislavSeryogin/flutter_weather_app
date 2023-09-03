@@ -1,22 +1,25 @@
-// import 'package:flutter/material.dart';
-// import 'package:flutter_weather_app/pages/weather/weather_page_wrapper.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_weather_app/pages/combine_weather_screen.dart';
+import 'package:flutter_weather_app/repository/weather_repository.dart';
+import 'package:http/http.dart' as http;
 
+class WelcomePageViewModel {
+  final BuildContext context;
+  final weatherRepository = WeatherRepositoryImpl(client: http.Client());
 
-// class WelcomePageViewModel {
-//   final BuildContext context;
+  WelcomePageViewModel({required this.context});
 
-//   WelcomePageViewModel({required this.context});
+  void init() {
+    Future.delayed(const Duration(seconds: 2), navigateToHomePage);
+  }
 
-//   void init() {
-//     Future.delayed(const Duration(seconds: 2), navigateToHomePage);
-//   }
-
-//   void navigateToHomePage() {
-//     Navigator.pushReplacement(
-//       context,
-//       MaterialPageRoute(
-//         builder: (_) => WeatherPageWrapper(),
-//       ),
-//     );
-//   }
-// }
+  void navigateToHomePage() {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (_) =>
+            CombinedWeatherScreen(weatherRepository: weatherRepository),
+      ),
+    );
+  }
+}

@@ -1,21 +1,22 @@
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
+// import 'package:flutter_weather_app/pages/weather/weather_page_wrapper.dart';
 
 
-class WelcomePageViewModel {
-  final BuildContext context;
+// class WelcomePageViewModel {
+//   final BuildContext context;
 
-  WelcomePageViewModel({required this.context});
+//   WelcomePageViewModel({required this.context});
 
-  // void init() {
-  //   Future.delayed(const Duration(seconds: 2), navigateToHomePage);
-  // }
+//   void init() {
+//     Future.delayed(const Duration(seconds: 2), navigateToHomePage);
+//   }
 
-  // void navigateToHomePage() {
-  //   Navigator.pushReplacement(
-  //     context,
-  //     MaterialPageRoute(
-  //       builder: (_) => WeatherPageWrapper(),
-  //     ),
-  //   );
-  // }
-}
+//   void navigateToHomePage() {
+//     Navigator.pushReplacement(
+//       context,
+//       MaterialPageRoute(
+//         builder: (_) => WeatherPageWrapper(),
+//       ),
+//     );
+//   }
+// }

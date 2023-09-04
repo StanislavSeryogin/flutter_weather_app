@@ -12,7 +12,7 @@
 ####  - to simplify code writing : *equatable*;
 
 # 
- 
-![flutter_weather_app](https://github.com/StanislavSeryogin/flutter_weather_app/assets/64367475/74f0ee91-c4cf-4d54-bd2a-f9c2cdce130b)
 
-![list_of_user](https://github.com/StanislavSeryogin/list_of_users/assets/64367475/08864354-0519-42c7-a275-74322b48aea1)
+ ![flutter_weather_app](https://github.com/StanislavSeryogin/flutter_weather_app/assets/64367475/dfb49a62-6841-43c1-817b-bfa0ae0f3bb1)
+
+

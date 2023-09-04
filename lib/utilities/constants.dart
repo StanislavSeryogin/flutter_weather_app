@@ -14,17 +14,20 @@ const kCityNameTextStyle = TextStyle(
   fontSize: 40.0,
 );
 
-const kTextFieldInputDecoration = InputDecoration(
-    filled: true,
-    icon: Icon(
-      Icons.location_city,
-      color: Colors.white,
-    ),
-    hintText: 'Enter city name',
-    hintStyle: TextStyle(
-      color: Colors.grey,
-    ),
-    border: OutlineInputBorder(
-      borderRadius: BorderRadius.all(Radius.circular(10.0)),
-      borderSide: BorderSide.none,
-    ));
+const kMainDescriptionTextStyle = TextStyle(
+  color: Colors.white,
+  fontSize: 25,
+  fontFamily: 'Spartan MB',
+);
+
+const kMainListTextStyle = TextStyle(
+  color: Colors.white,
+  fontSize: 20,
+  fontFamily: 'Spartan MB',
+);
+
+const kTitleListTextStile = TextStyle(
+  color: Colors.white,
+  fontSize: 18,
+  fontFamily: 'Spartan MB',
+);

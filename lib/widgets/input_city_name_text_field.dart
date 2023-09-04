@@ -4,10 +4,10 @@ class InputCityNameTextField extends StatelessWidget {
   const InputCityNameTextField(
       {super.key,
       required this.textEditingController,
-      required this.voidCallback});
+      required this.cityNamePressed});
 
   final TextEditingController textEditingController;
-  final VoidCallback voidCallback;
+  final VoidCallback cityNamePressed;
 
   @override
   Widget build(BuildContext context) {
@@ -22,17 +22,19 @@ class InputCityNameTextField extends StatelessWidget {
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
           borderSide: const BorderSide(
-            color: Colors.grey,
+            color: Colors.white70,
+            width: 2,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
           borderSide: const BorderSide(
             color: Colors.white,
+            width: 2,
           ),
         ),
         suffixIcon: IconButton(
-          onPressed: voidCallback,
+          onPressed: cityNamePressed,
           icon: const Icon(
             Icons.search,
             color: Colors.white,

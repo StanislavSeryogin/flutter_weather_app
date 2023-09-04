@@ -17,17 +17,24 @@ class BuildWeatherList extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
+          const SizedBox(height: 20),
           Text(
             weather.city,
             style: kCityNameTextStyle,
           ),
-          Image.network(
-            'http://openweathermap.org/img/w/${weather.icon}.png',
-            width: 50,
-            height: 50,
+          Image.asset(
+            'assets/icons/${weather.description.replaceAll(' ', '').toLowerCase()}.png',
+            width: 150,
+            height: 150,
           ),
-          Text(weather.description),
-          Text('${weather.temperature}°C'),
+          Text(
+            weather.description,
+            style: kMainDescriptionTextStyle,
+          ),
+          Text(
+            '${weather.temperature}°C',
+            style: kMainDescriptionTextStyle,
+          ),
           ListView.builder(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
@@ -45,12 +52,24 @@ class BuildWeatherList extends StatelessWidget {
                       width: 50,
                       height: 50,
                     ),
-                    title: Text(item.dayOfWeek),
-                    subtitle: Text(item.description),
+                    title: Text(
+                      item.dayOfWeek,
+                      style: kMainListTextStyle,
+                    ),
+                    subtitle: Text(
+                      item.description,
+                      style: kTitleListTextStile,
+                    ),
                     trailing: Column(
                       children: [
-                        Text('${item.temperature}°C'),
-                        Text('${item.humidity}%'),
+                        Text(
+                          '${item.temperature}°C',
+                          style: kMainListTextStyle,
+                        ),
+                        Text(
+                          '${item.humidity}%',
+                          style: kTitleListTextStile,
+                        ),
                       ],
                     ),
                   ),

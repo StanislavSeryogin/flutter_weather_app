@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_weather_app/pages/combine_weather_screen.dart';
+import 'package:flutter_weather_app/pages/combine_weather_page.dart';
 import 'package:flutter_weather_app/repository/weather_repository.dart';
 import 'package:http/http.dart' as http;
 
@@ -18,7 +18,7 @@ class WelcomePageViewModel {
       context,
       MaterialPageRoute(
         builder: (_) =>
-            CombinedWeatherScreen(weatherRepository: weatherRepository),
+            CombinedWeatherPage(weatherRepository: weatherRepository)
       ),
     );
   }

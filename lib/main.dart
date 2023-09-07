@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Weather App',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const WelcomePage(),
-      //home: const WelcomePage(),
+
     );
   }
 }

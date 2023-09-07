@@ -35,14 +35,14 @@ class _WelcomePageState extends State<WelcomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               AnimatedTextWidget(
-                text: 'K',
+                text: 'W',
                 color: Colors.orangeAccent,
                 fontSize: 35,
                 fontStyle: FontStyle.italic,
                 fontWeight: FontWeight.w700,
               ),
               AnimatedTextWidget(
-                text: 'evych Solutions',
+                text: 'eather App',
                 color: Colors.white,
                 fontSize: 35,
                 fontStyle: FontStyle.normal,

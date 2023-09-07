@@ -45,7 +45,6 @@ class WeatherRepositoryImpl implements WeatherRepository {
 
   @override
   Future<List<DailyForecast>> fetchCityForecast(String city) async {
-    // First, get the latitude and longitude for the city using the weather endpoint.
     final weatherUrl = Uri.parse(
         'http://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric');
 
@@ -59,7 +58,6 @@ class WeatherRepositoryImpl implements WeatherRepository {
     final lat = weatherData['coord']['lat'];
     final lon = weatherData['coord']['lon'];
 
-    // Now, use the latitude and longitude to get the forecast.
     final forecastUrl = Uri.parse(
         'http://api.openweathermap.org/data/2.5/onecall?lat=$lat&lon=$lon&exclude=hourly,minutely&appid=$apiKey&units=metric');
 

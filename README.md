@@ -13,6 +13,7 @@
 
 # 
 
- ![flutter_weather_app](https://github.com/StanislavSeryogin/flutter_weather_app/assets/64367475/dfb49a62-6841-43c1-817b-bfa0ae0f3bb1)
+![flutter_weather_app](https://github.com/StanislavSeryogin/flutter_weather_app/assets/64367475/a3f8464b-3484-4407-a9bc-0960be99f5ee)
+
 
 
